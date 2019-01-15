@@ -3,7 +3,7 @@ import pytest
 import random as rn
 import six
 import numpy as np
-import keras.backend as K
+import tensorflow.keras.backend as K
 
 sys.path.insert(0, '..')
 

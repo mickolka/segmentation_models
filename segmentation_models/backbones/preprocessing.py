@@ -3,7 +3,7 @@ Image pre-processing functions.
 Images are assumed to be read in uint8 format (range 0-255).
 """
 
-import keras.applications as ka
+import tensorflow.keras.applications as ka
 
 identical = lambda x: x
 bgr_transpose = lambda x: x[..., ::-1]

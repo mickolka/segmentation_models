@@ -1,8 +1,8 @@
-from keras.engine import Layer
-from keras.engine import InputSpec
-from keras.utils import conv_utils
-from keras.legacy import interfaces
-from keras.utils.generic_utils import get_custom_objects
+from tensorflow.keras.engine import Layer
+from tensorflow.keras.engine import InputSpec
+from tensorflow.keras.utils import conv_utils
+from tensorflow.keras.legacy import interfaces
+from tensorflow.keras.utils.generic_utils import get_custom_objects
 
 from .functions import resize_images
 

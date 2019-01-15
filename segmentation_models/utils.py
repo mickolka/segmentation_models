@@ -1,7 +1,7 @@
 """ Utility functions for segmentation models """
 import numpy as np
 from functools import wraps
-from keras.layers import BatchNormalization
+from tensorflow.keras.layers import BatchNormalization
 
 
 def get_layer_number(model, layer_name):

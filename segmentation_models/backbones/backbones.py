@@ -1,4 +1,4 @@
-import keras.applications as ka
+import tensorflow.keras.applications as ka
 import classification_models as cm
 
 from .inception_resnet_v2 import InceptionResNetV2
