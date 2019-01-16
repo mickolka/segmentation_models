@@ -29,8 +29,8 @@ from tensorflow.keras.layers import Input
 from tensorflow.keras.layers import Lambda
 from tensorflow.keras.layers import MaxPooling2D
 from tensorflow.keras.utils import get_file
-from tensorflow.keras.engine.topology import get_source_inputs
-from tensorflow.keras.applications import imagenet_utils
+from tensorflow.keras.utils import get_source_inputs
+from tensorflow.python.keras.applications import imagenet_utils
 from tensorflow.keras import backend as K
 
 
@@ -38,7 +38,7 @@ import tensorflow.keras
 from distutils.version import StrictVersion
 
 if StrictVersion(tensorflow.keras.__version__) < StrictVersion('2.2.0'):
-    from tensorflow.keras.applications.imagenet_utils import _obtain_input_shape
+    from tensorflow.python.keras.applications.imagenet_utils import _obtain_input_shape
 else:
     from keras_applications.imagenet_utils import _obtain_input_shape
 
