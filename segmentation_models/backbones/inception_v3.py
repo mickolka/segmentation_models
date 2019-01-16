@@ -33,7 +33,7 @@ import tensorflow.keras
 from distutils.version import LooseVersion
 
 if LooseVersion(tensorflow.keras.__version__) < LooseVersion('2.2.0'):
-    from tensorflow.keras.applications.imagenet_utils import _obtain_input_shape
+    from keras.applications.imagenet_utils import _obtain_input_shape
 else:
     from keras_applications.imagenet_utils import _obtain_input_shape
 
