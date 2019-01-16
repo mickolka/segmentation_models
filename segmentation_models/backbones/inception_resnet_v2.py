@@ -28,7 +28,7 @@ from tensorflow.keras.layers import GlobalMaxPooling2D
 from tensorflow.keras.layers import Input
 from tensorflow.keras.layers import Lambda
 from tensorflow.keras.layers import MaxPooling2D
-from tensorflow.keras.utils.data_utils import get_file
+from tensorflow.keras.utils import get_file
 from tensorflow.keras.engine.topology import get_source_inputs
 from tensorflow.keras.applications import imagenet_utils
 from tensorflow.keras import backend as K
