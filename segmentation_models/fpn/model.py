@@ -94,6 +94,4 @@ def FPN(backbone_name='vgg16',
     if freeze_encoder:
         freeze_model(backbone)
 
-    model.name = 'fpn-{}'.format(backbone.name)
-
     return model

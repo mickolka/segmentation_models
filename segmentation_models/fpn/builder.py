@@ -91,5 +91,5 @@ def build_fpn(backbone,
     # activation
     x = Activation(activation)(x)
 
-    model = Model(backbone.input, x)
+    model = Model(backbone.input, x, name='fpn-{}'.format(backbone.name))
     return model

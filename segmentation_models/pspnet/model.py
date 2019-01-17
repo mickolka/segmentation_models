@@ -115,6 +115,4 @@ def PSPNet(backbone_name='vgg16',
     if freeze_encoder:
         freeze_model(backbone)
 
-    model.name = 'psp-{}'.format(backbone_name)
-
     return model

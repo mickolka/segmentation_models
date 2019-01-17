@@ -98,6 +98,4 @@ def Linknet(backbone_name='vgg16',
     if freeze_encoder:
         freeze_model(backbone)
 
-    model.name = 'link-{}'.format(backbone_name)
-
     return model

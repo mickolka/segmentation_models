@@ -42,6 +42,6 @@ def build_unet(backbone, classes, skip_connection_layers,
     x = Conv2D(classes, (3,3), padding='same', name='final_conv')(x)
     x = Activation(activation, name=activation)(x)
 
-    model = Model(input, x)
+    model = Model(input, x, name = 'u-{}'.format(backbone_name))
 
     return model

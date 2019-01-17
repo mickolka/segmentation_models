@@ -94,6 +94,4 @@ def Unet(backbone_name='vgg16',
     if freeze_encoder:
         freeze_model(backbone)
 
-    model.name = 'u-{}'.format(backbone_name)
-
     return model
