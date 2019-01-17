@@ -34,7 +34,7 @@ from tensorflow.python.keras.applications import imagenet_utils
 from tensorflow.keras import backend as K
 
 
-import tensorflow.keras
+import keras
 from distutils.version import LooseVersion
 
 if LooseVersion(keras.__version__) < LooseVersion('2.2.0'):

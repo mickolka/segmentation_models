@@ -29,7 +29,7 @@ from tensorflow.keras.utils import get_file
 from tensorflow.keras import backend as K
 from tensorflow.python.keras.applications import imagenet_utils
 
-import tensorflow.keras
+import keras
 from distutils.version import LooseVersion
 
 if LooseVersion(keras.__version__) < LooseVersion('2.2.0'):
