@@ -58,6 +58,6 @@ def build_psp(backbone,
 
     x = Activation(activation, name=activation)(x)
 
-    model = Model(input, x, name='psp-{}'.format(backbone_name))
+    model = Model(input, x, name='psp-{}'.format(backbone.name))
 
     return model

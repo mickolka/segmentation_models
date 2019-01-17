@@ -44,6 +44,6 @@ def build_linknet(backbone,
     x = Conv2D(classes, (3, 3), padding='same', name='final_conv')(x)
     x = Activation(activation, name=activation)(x)
 
-    model = Model(input, x, name='link-{}'.format(backbone_name))
+    model = Model(input, x, name='link-{}'.format(backbone.name))
 
     return model
